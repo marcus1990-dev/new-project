@@ -23,7 +23,7 @@
     </div>
     <?php endif ?>
 
-    <div class="container">
+    <div class="container mt-3">
     <?php
         $mysqli = new mysqli('localhost', 'root', '', 'crud') or die(mysqli_error($mysqli));
         $resultado = $mysqli->query("SELECT * FROM dados") or die($mysqli->error);
